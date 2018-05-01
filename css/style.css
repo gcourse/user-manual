@@ -1,0 +1,148 @@
+body {
+  font-size: 100%;
+  color: #444;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #00a0d2;
+}
+
+header {
+  position: relative;
+  background-color: #0073aa;
+  border-bottom: 2px solid #ddd;
+  margin: 0;
+  z-index: 9;
+}
+header:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.gc-logo-wrapper {
+  display: block;
+  padding: 10px 15px 0 15px;
+  background-color: #fff;
+  border-radius: 0 0 80% 0;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 0 2px 2px 0;
+}
+
+.gc-logo {
+  height: 50px;
+}
+
+.page-title {
+  display: block;
+  text-align: right;
+  margin: 0;
+  padding: 5px 15px;
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: 400;
+  color: #fff;
+}
+
+.toggle-menu {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  border: 1px solid #fff;
+  outline: 1px solid #ddd;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background: #f9f9f9 url(../images/menu.png) no-repeat center center;
+  background-size: 80%;
+  cursor: pointer;
+  display: none;
+}
+
+#menus {
+  position: relative;
+  height: 100%;
+  padding: 0;
+  z-index: 1;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+  display: none;
+}
+
+.menu-title {
+  margin: 0;
+  font-weight: 200;
+  padding: 4px 15px;
+  background-color: #f1f1f1;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px 0;
+}
+
+.menu {
+  margin: 0;
+  list-style: none;
+  padding: 0 0 0 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0;
+}
+.menu li {
+  padding: 4px 0;
+}
+.menu a {
+  display: block;
+  color: #444;
+}
+
+#contents {
+  padding: 10px 25px;
+}
+
+.entry-title:after {
+  content: '';
+  display: block;
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    padding-left: 300px;
+  }
+
+  #sidebar {
+    width: 300px;
+    margin-left: -300px;
+    float: left;
+  }
+
+  header {
+    position: fixed;
+    width: 300px;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #ddd;
+  }
+
+  #menus {
+    display: block;
+    margin-top: 103px;
+  }
+
+  #contents {
+    border-left: 1px solid #fff;
+    height: 900px;
+  }
+}

@@ -1,0 +1,30 @@
+@media screen {
+  @media (min-width: 800px) {
+    body {
+      padding-left: 300px;
+    }
+
+    #sidebar {
+      width: 300px;
+      margin-left: -300px;
+      float: left;
+    }
+    header {
+      position: fixed;
+      width: 300px;
+      top: 0;
+      left: 0;
+      border-bottom: 2px solid #ddd;
+    }
+
+    #menus {
+      display: block;
+      margin-top: 103px;
+    }
+
+    #contents {
+      border-left: 1px solid #fff;
+      height: 900px;
+    }
+  }
+}
