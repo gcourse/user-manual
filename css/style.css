@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 body {
   font-size: 100%;
   color: #444;
   background-color: #f9f9f9;
   padding: 0;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 100;
 }
 
 img {
@@ -77,6 +81,7 @@ header:after {
   background-color: #f9f9f9;
   border-right: 1px solid #ddd;
   display: none;
+  font-size: 0.9em;
 }
 
 .menu-title {
@@ -107,6 +112,10 @@ header:after {
 
 #contents {
   padding: 10px 25px;
+  max-width: 1024px;
+}
+#contents p {
+  text-indent: 35px;
 }
 
 .entry-title:after {
@@ -138,7 +147,7 @@ header:after {
 
   #menus {
     display: block;
-    margin-top: 103px;
+    margin-top: 110px;
   }
 
   #contents {
